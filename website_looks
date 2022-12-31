@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Black and White Website</title>
+    <style>
+      /* Add some basic styling for the website */
+      body {
+        background-color: white;
+        color: black;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Style the host game and join game buttons */
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        border: none;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+
+      /* Style the tabs on the top right corner */
+      .tab {
+        float: right;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .tab li {
+        float: left;
+      }
+
+      .tab a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+      }
+
+      .tab a:hover {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Add the host game and join game buttons -->
+    <button class="button">Host Game</button>
+    <button class="button">Join Game</button>
+
+    <!-- Add the tabs on the top right corner -->
+    <ul class="tab">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#how-to-play">How to Play</a></li>
+      <li><a href="#about-me">About Me</a></li>
+    </ul>
+  </body>
+</html>
