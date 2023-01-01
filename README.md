@@ -1,5 +1,3 @@
-Elimination-Game
-
 Elimination Game is a multiplayer text-based game designed after the Alice in Borderland's King of Hearts game.
 
 How-to-Play:
