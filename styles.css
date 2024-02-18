@@ -12,16 +12,29 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjusted box shadow for a lifted effect */
+}
+
+.card-header {
+    background-color: #3498db; /* Added a header color */
+    color: #fff; /* Text color for header */
+    padding: 10px; /* Increased padding for header */
+    border-top-left-radius: 8px; /* Rounded corners for header */
+    border-top-right-radius: 8px;
+}
+
+.card-body {
+    padding: 20px; /* Increased padding for body */
 }
 
 h1 {
     color: #333;
+    margin-top: 0; /* Remove default margin for h1 */
 }
 
 p {
     color: #666;
+    line-height: 1.5; /* Improved readability with increased line-height */
 }
 
 .button {
@@ -33,6 +46,8 @@ p {
     border-radius: 4px;
     margin: 10px;
     transition: background-color 0.3s;
+    border: none; /* Removed border */
+    cursor: pointer; /* Added pointer cursor */
 }
 
 .button:hover {
@@ -44,6 +59,8 @@ p {
     padding: 10px;
     margin: 10px 0;
     box-sizing: border-box;
+    border: 1px solid #ccc; /* Added border for input */
+    border-radius: 4px; /* Added border radius for input */
 }
 
 .secondary {
