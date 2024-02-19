@@ -11,9 +11,44 @@
     <div class="container">
         <h1>Create Lobby</h1>
         <p>Choose a name for your lobby:</p>
-        <input type="text" placeholder="Lobby Name" class="input">
-        <a href="#" class="button">Create</a>
+        <input type="text" placeholder="Lobby Name" id="lobbyName" class="input">
+        <a href="#" class="button" onclick="createLobby()">Create</a>
         <a href="index.html" class="button secondary">Back to Home</a>
     </div>
+
+    <!-- Display Lobby Info -->
+    <div id="lobbyInfo" class="container" style="display: none;">
+        <h1>Lobby Details</h1>
+        <h2 id="lobbyTitle"></h2>
+        <div id="playerList"></div>
+    </div>
+
+    <script>
+        function createLobby() {
+            var lobbyName = document.getElementById("lobbyName").value;
+            // Assuming you have a JavaScript function to handle creating the lobby
+            // This function could handle sending the lobby name to the server and processing the response
+            // For demonstration purposes, I'll simulate the response here
+            var players = ["Player 1", "Player 2", "Player 3"]; // Sample player list
+            displayLobby(lobbyName, players);
+        }
+
+        function displayLobby(lobbyName, players) {
+            // Hide the create lobby section
+            document.querySelector('.container').style.display = 'none';
+            // Display lobby info section
+            document.getElementById('lobbyInfo').style.display = 'block';
+            // Set lobby title
+            document.getElementById('lobbyTitle').innerText = lobbyName;
+            // Display player list
+            var playerList = document.getElementById('playerList');
+            playerList.innerHTML = '<h3>Players:</h3>';
+            players.forEach(function(player) {
+                var playerItem = document.createElement('p');
+                playerItem.textContent = player;
+                playerList.appendChild(playerItem);
+            });
+        }
+    </script>
 </body>
 </html>
