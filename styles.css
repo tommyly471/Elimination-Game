@@ -83,3 +83,12 @@ p {
 .container ul li {
     color: #6f6e6e;
 }
+
+.end-image {
+    margin-top: 50px; /* Add some top margin for spacing */
+    text-align: center; /* Center-align the image */
+}
+
+.end-image img {
+    max-width: 80%; /* Set the maximum width of the image to 80% of its container */
+}
