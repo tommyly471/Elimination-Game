@@ -30,12 +30,20 @@ body {
 h1 {
     color: #333;
     margin-top: 0; /* Remove default margin for h1 */
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-top: 0;
+    text-align: center;
 }
 
 p {
     color: #666;
     line-height: 1.5; /* Improved readability with increased line-height */
 }
+
 
 .button {
     display: inline-block;
@@ -69,4 +77,9 @@ p {
 
 .secondary:hover {
     background-color: #7f8c8d;
+}
+
+.container ol li,
+.container ul li {
+    color: #6f6e6e;
 }
