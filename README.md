@@ -7,4 +7,4 @@ their associated symbols being displayed in the web page. Players must tell one 
 Each round will take X amount of minutes and by the end of the timer, players must enter the symbol they believe they have. The game ends when either the 
 traitor and one other is alive or the traitor is eliminated.
 
-test
+update
