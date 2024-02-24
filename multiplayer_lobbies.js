@@ -122,3 +122,27 @@ function getLobbies() {
 http.listen(3000, () => {
   console.log('Listening on port 3000');
 });
+
+// Function to start the game
+function startGame(lobbyName) {
+  // Get the players in the lobby
+  const players = getPlayersInLobby(lobbyName);
+
+  // Check if there are enough players to start the game
+  if (players.length < 2) {
+      // Notify players that there are not enough players to start the game
+      io.to(lobbyName).emit('not enough players', 'Not enough players to start the game.');
+      return;
+  }
+
+  // Initialize game state
+  const gameState = initializeGameState(players);
+
+  // Deal cards to players
+  dealCards(players, gameState);
+
+  // Set up any other necessary game environment
+
+  // Notify players that the game has started
+  io.to(lobbyName).emit('game started', gameState);
+}
